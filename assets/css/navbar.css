@@ -1,0 +1,279 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+/* HEADER CSS */
+
+header {
+  display: flex;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.nav__brand {
+  width: 20%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 15px;
+}
+
+.nav__brand__logo {
+  font-family: 'gilroybold';
+  font-size: 24px;
+  color: #fff;
+} 
+
+.nav__brand__logo:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav__menu {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+
+.menu__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu__list {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu__list__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 0 2rem;
+}
+.nav-color{
+  background: black;
+}
+
+.menu__list__link {
+  color: #fff;
+  line-height: 167.8%;
+}
+
+.menu__list__link:hover {
+  text-decoration: none;
+  color: #CBFDC3;
+}
+
+.nav__button__container {
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav__button {
+  background-color: transparent;
+  border: none;
+  text-decoration: none;
+  margin-left: 10%;
+}
+
+
+.btn-nav-active {
+  background-color: #CBFDC3;
+  color: black;
+  padding: 0.7rem 2rem;
+  font-family: 'gilroylight';
+  font-size: 14px;
+}
+
+.btn-nav-active:hover {
+  color: #fff;
+  transform: scale(1.1);
+}
+
+.nav__button__link__active {
+  color: black;
+}
+
+.nav__button__link__active:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.hamburger-container {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+@media (max-width: 992px) {
+
+  .nav__menu {
+    display: none;
+  }
+
+  .nav__button__container {
+    display: none;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav__brand {
+    width: auto;
+  }
+
+  .hamburger-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .hamburger__menu {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .menubar {
+    height: 2px;
+    width: 1rem;
+    background-color: #CBFDC3;
+    margin: 2px 0
+  }
+
+  .mobile-menu-active {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(53, 51, 51);
+    padding: 10% 5%;
+    z-index: 100;
+  }
+
+  .mobile__menu__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mobile__menu__list {
+    list-style: none;
+    margin: 2rem 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .mobile__menu__list__item {
+    color: black !important;
+    margin: 0.8rem 0;
+  }
+
+  .mobile__menu__list__link {
+    color: #fff;
+    font-family: 'gilroysemibold';
+    font-size: 18px;
+  }
+
+  .mobile__menu__list__link:hover {
+    text-decoration: none;
+    color: black;
+  }
+
+  .close-mobile-menu {
+    position: absolute;
+    justify-self: flex-end;
+    align-self: flex-start;
+    right: 7%;
+    top: 4%;
+  }
+
+  .close-mobile-menu i {
+    color: white;
+  }
+
+  .mobile__nav__button {
+    background-color: #CBFDC3;
+    color: #fff;
+    padding: 0.6rem 2rem;
+    border: none;
+  }
+
+  .mobile__nav__button__link {
+    color: black;
+  }
+
+  .mobile__nav__button__link:hover {
+    color: black;
+    text-decoration: none;
+  }
+
+  .mobile__nav__button__link:focus {
+    outline: none;
+  }
+  
+}
+
+@media (max-width: 574px) {
+  nav {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 994px) {
+  .social-buttons {
+    display: flex;
+    justify-content: center;
+  }
+
+  .social-link {
+    margin: 3%;
+  }
+  
+  .social-button__icon {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 575px) {
+
+  .nav__brand {
+    padding-left: 0;
+  }
+
+  .nav {
+    padding-right: 0;
+  }
+
+}
